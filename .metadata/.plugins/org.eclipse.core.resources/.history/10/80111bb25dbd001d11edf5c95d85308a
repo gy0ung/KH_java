@@ -1,0 +1,21 @@
+package messenger;
+
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
+public class ClientProgram {
+
+	public static void main(String[] args) {
+		int port = 3005;
+		try {
+			String ip = InetAddress.getLocalHost().getHostAddress();
+			
+			
+		} catch (UnknownHostException e) {
+			e.printStackTrace();
+		}
+		
+
+	}
+
+}

@@ -1,0 +1,44 @@
+package decimalFormat01;
+
+import java.text.DecimalFormat;
+
+public class DecimalFormat1 {
+
+	public static void main(String[] args) {
+		// 변수 number을 1234567.89로 초기화
+		double number = 1234567.5;
+		
+		// 객체생성하여 형식설정                   ↓ String만 올수있음
+		DecimalFormat df = new DecimalFormat("0");
+		
+		// ↓ DecimalFormat("0")의 형식으로 number를 출력해라 
+ 		System.out.println(df.format(number));
+ 		System.out.println(new DecimalFormat("0").format(123.21));
+ 		// 위의 두 형식을 같은코드 (number도 그냥 숫자로 입력가능)
+
+ 		System.out.println("--------------------");
+		
+ 		// "0"과 "#"은 비슷하게 쓸수있다.
+ 		System.out.println(new DecimalFormat("0").format(number));
+ 		System.out.println(new DecimalFormat("#").format(number));
+ 		System.out.println("--------------------");
+ 		// "0.0"은 무조건 자리차지 (없어도 0이 무조건출력)
+ 		System.out.println(new DecimalFormat("0.0").format(number));
+ 		// "#.#"은 없으면 출력하지않는다. (0과 #의 차이)
+ 		System.out.println(new DecimalFormat("#.#").format(number));
+ 		System.out.println("--------------------");
+ 		// 없어도 무조건 0으로 출력된다. 무조건 자리차지함! #은 자리가있는 숫자까지만 나옴
+ 		System.out.println(new DecimalFormat("00000000.00").format(number));
+ 		System.out.println(new DecimalFormat("########.##").format(number));
+ 		System.out.println("--------------------");
+		
+ 		// 무조건 마이너스를 붙임
+ 		System.out.println(new DecimalFormat("#.#-").format(number));
+ 		System.out.println(new DecimalFormat("-#.#").format(number));
+		
+ 		System.out.println(new DecimalFormat("+#.#;-#.#;").format(number));
+		
+		
+	}
+
+}

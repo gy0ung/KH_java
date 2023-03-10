@@ -1,0 +1,40 @@
+package messenger;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.net.InetAddress;
+import java.net.Socket;
+import java.net.UnknownHostException;
+import java.util.Scanner;
+
+public class ClientProgram {
+
+	public static void main(String[] args) {
+		try {
+			int port = 3005;
+			String ip = InetAddress.getLocalHost().getHostAddress();
+			System.out.println(ip);
+			Scanner sc = new Scanner(System.in);
+			BufferedReader br = null;
+			PrintWriter pw = null;
+			Socket socket = null;
+			
+			// 1. 서버에 연결 요청
+			try {
+				socket = new Socket(ip,port);
+				
+				
+				
+				
+			
+		} catch (UnknownHostException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+
+	}
+
+}

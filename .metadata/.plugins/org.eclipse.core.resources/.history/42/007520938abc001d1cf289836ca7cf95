@@ -1,0 +1,15 @@
+package file01;
+
+import java.io.File;
+
+public class File1 {
+
+	public static void main(String[] args) {
+		// 경로를 지정하지 않고 파일 만들기
+		File f1 = new File("test.txt");
+		
+		
+		
+	}
+
+}

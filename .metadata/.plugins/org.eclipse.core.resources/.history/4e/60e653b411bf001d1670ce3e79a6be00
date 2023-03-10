@@ -1,0 +1,16 @@
+package test0309;
+
+public class Divisor {
+	// 최대공약수를 구하는 클래스
+	public void Divisor(int num) {
+		for(int i=1; i<=num; i++) {
+			if(num%i == 0)
+				System.out.println(i+", ");
+		}
+		System.out.println();
+	}
+	
+	
+	
+	
+}

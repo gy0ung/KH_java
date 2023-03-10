@@ -1,0 +1,17 @@
+package test0309;
+
+public class SubMultiple {
+	// 약수를 구하는 클래스
+	int num;
+
+	public SubMultiple(int num) {
+		super();
+		this.num = num;
+
+	
+	for(int a = 1; a<num; a++) {
+		
+	}
+	
+	
+}

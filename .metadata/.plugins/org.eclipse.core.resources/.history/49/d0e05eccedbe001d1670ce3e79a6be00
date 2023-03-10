@@ -1,0 +1,36 @@
+package collection.hashSet02;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+class A {
+	String aa;
+	
+	public A(String aa) {
+		this.aa = aa;
+	}
+}
+
+public class HashSet1 {
+	public static void main(String[] args) {
+		HashSet set1 = new HashSet();
+		Set set2 = new HashSet();  // 부모타입으로 형변환해서도 사용가능
+		
+		A a1 = new A("c");
+		
+		set1.add(new A("a"));
+		set1.add(new A("b"));
+		set1.add(a1);
+		set1.add(new A("d"));
+		set1.add(new A("e"));
+		
+		System.out.println("size : " + set1.size());
+		
+		// set의 5개의 객체를 변수 iterator에 넣음
+		Iterator<A> iterator = set1.iterator();
+		
+		
+	}
+
+}

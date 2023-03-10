@@ -1,0 +1,9 @@
+package object05;
+
+public class Fda {
+
+	public static void main(String[] args) {
+
+	}
+
+}

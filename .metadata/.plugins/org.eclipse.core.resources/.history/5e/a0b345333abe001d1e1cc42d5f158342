@@ -1,0 +1,16 @@
+package test0309;
+
+public class Test {
+	
+// 무한반복하면서 1:약수 / 2:최소공배수 / 3:최대약수 / 0:종료 선택한 번호에 맞는 숫자를 입력받아 출력
+
+	public static void main(String[] args) {
+		// 실행 클래스 
+		
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,26 @@
+package collection05.vector01;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Vector;
+
+public class Vector1 {
+
+	public static void main(String[] args) {
+		Vector vector = new Vector();
+		ArrayList al = new ArrayList();
+		
+		List<Student>vlist = new Vector<>();
+		List alist = new ArrayList();
+		
+		Student student = new Student("홍길동",8);
+		
+		vlist.add(new Student("아무개",480));
+		vlist.add(new Student("정보",30));
+		vlist.add(new Student("김수한",27));
+		vlist.add(new Student("거북이",5));
+		vlist.add(new Student("두루미",150));
+		
+	}
+
+}

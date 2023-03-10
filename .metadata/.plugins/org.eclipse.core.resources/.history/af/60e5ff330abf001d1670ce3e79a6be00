@@ -1,0 +1,7 @@
+package collection.hashSet02;
+
+
+public class HashSet5 {
+	public static void main(String[] args) {
+	}
+}

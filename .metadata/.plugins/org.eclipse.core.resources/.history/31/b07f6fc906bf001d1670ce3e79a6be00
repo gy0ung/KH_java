@@ -1,0 +1,59 @@
+package collection.hashSet02;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+class Member {
+	pubic String name;
+	int age;
+	
+	public Member(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		obj.name.equals(name);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	@Override
+	public String toString() {
+		return "Member [name=" + name + ", age=" + age + "]";
+	}
+}
+
+public class HashSet3 {
+	public static void main(String[] args) {
+		Set<Member> set = new HashSet<Member>();
+		
+		set.add(new Member("홍길동",24));
+		set.add(new Member("홍길동",24));
+		
+		System.out.println("size : " + set.size());
+		iteratorPrint(set.iterator());
+		System.out.println();
+	}
+
+	static void iteratorPrint(Iterator<Member> i ) {
+		while(i.hasNext()) {
+			System.out.print(i.next() + " "); 
+			
+		}
+		System.out.println();
+	}
+}

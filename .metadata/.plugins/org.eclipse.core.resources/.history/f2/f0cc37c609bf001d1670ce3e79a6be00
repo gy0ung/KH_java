@@ -1,0 +1,22 @@
+package collection.hashSet02;
+
+
+public class HashSet5 {
+	public static void main(String[] args) {
+		Set<Human> set = new HashSet<Human>();
+		
+		set.add(new Human("홍길동",22));
+		set.add(new Human("홍길동",22));
+		
+		System.out.println("size : " + set.size());
+		iteratorPrint(set.iterator());
+		System.out.println();
+	}
+
+	static void iteratorPrint(Iterator<Human> i ) {
+		while(i.hasNext()) {
+			System.out.print(i.next() + " "); 
+		}
+		System.out.println();
+	}
+}

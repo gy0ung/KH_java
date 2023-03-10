@@ -1,0 +1,45 @@
+package collection.hashSet02;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Set;
+
+public class HashSet5 {
+	public static void main(String[] args) {
+		Object[] arr = {1,4,6,7,3,2,8,9,3,4,5,6,7}; // 13개
+		Set set = new HashSet();
+		for(Object i : arr)
+			set.add(i);
+		
+		System.out.println("size : " + set.size()); // 9개 (중복제거됨)
+		System.out.println();
+		
+		// 로또번호 추출하기
+		// 1~45개의 랜덤한 숫자를 6개만 추출 
+		// 중복 X, 순서대로 저장 및 나열 
+		
+		
+		// while문 
+		Set<Integer> set2 = new HashSet<Integer>();
+		while(set2.size()<6) {
+			set2.add(((int)(Math.random()*45)+1));
+		}
+		List list2 = new LinkedList(set2);
+		Collections.sort(list2);
+		System.out.println(list2);
+		
+		// for문
+		System.out.println();
+		Set<Integer> set3 = new HashSet<Integer>();
+		for(int i=0; set3.size()<6; i++) {
+			set3.add(((int)(Math.random()*45)+1));
+		}
+		List list3 = new LinkedList(set3);
+		Collections.sort(list3);
+		System.out.println(list3);
+		
+	}
+}

@@ -1,0 +1,25 @@
+package collection05.vector01;
+
+import java.util.Vector;
+
+public class Vector2 {
+
+	public static void main(String[] args) {
+		// 매개변수로 어떠한 객체든 다 받겠다. *권장하지 않음*
+		Vector v = new Vector();
+		
+		v.add(1); // 정수로 넣었으나 객체로 인식
+		v.add(8.98); // 실수로 넣었으나 객체로 인식
+		v.add("478"); // 문자열로 넣었으나 객체로 인식
+		v.add(new Integer(8));
+		v.add(new Double(6.89));
+		v.add(new String("kh정보교육원"));
+		
+		Object obj = v.get(0); // 객체타입으로는 넣을수있음
+		int a = (int)v.get(0); // int타입으로 오류발생하여 타입변환
+		int
+		
+		
+	}
+
+}

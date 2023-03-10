@@ -1,0 +1,31 @@
+package object05;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+
+public class ObjectDao {
+	// 프로그램 → 파일 (출력)
+	public void fildSave() {
+		Phone ph1 = new Phone("아이폰", 1800000);
+		Phone ph1 = new Phone("갤럭시", 1700000);
+		Phone ph1 = new Phone("갤럭시노트", 21000000);
+		
+		// FileOutputStream : 1byte 기반 스트림
+		// ObjectOutputStream : 객체 단위로 출력할 수 있도록 도움을 주는 보조 스트림
+		
+		try(ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("d_phone.txt"))){
+			oos.writeObject(ph1); // 직렬화를 하지 않았기 때문에 예외가 발생
+			// phone클래스에 implements Serializable로 직렬화를 해주어야함
+		} catch(FileNotFoundException e) {
+			e.printStackTrace();
+		} catch(IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
+	
+	
+}

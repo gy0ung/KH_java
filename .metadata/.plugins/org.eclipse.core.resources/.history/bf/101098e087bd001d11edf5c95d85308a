@@ -1,0 +1,9 @@
+package collection05.vector01;
+
+public class Vector2 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

@@ -1,0 +1,21 @@
+package collection05.vector01;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Vector;
+
+public class Vector1 {
+
+	public static void main(String[] args) {
+		Vector vector = new Vector();
+		ArrayList al = new ArrayList();
+		
+		List<Student>vlist = new Vector<>();
+		List alist = new ArrayList();
+		
+		Student student = new Student();
+		
+		
+	}
+
+}

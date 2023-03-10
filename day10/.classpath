@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/day01"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/day02"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/day03"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/day04"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/day05"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/day06"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/day07"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/day08"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/day09"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,25 @@
+package test0309;
+
+import java.util.Arrays;
+
+public class SubMultiple {
+	// 약수를 구하는 클래스
+	int num;
+
+	public SubMultiple(int num) {
+		super();
+		this.num = num;
+
+	int[] arr = {};
+	
+	for(a = 1; a==num; a++) {
+		if(num%a == 0) {
+		int i = 0;
+		arr[i] = a;
+		i++;
+		}
+	}
+	System.out.println(Arrays.toString(arr));
+	}
+	
+}

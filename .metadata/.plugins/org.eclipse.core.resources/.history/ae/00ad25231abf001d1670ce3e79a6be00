@@ -1,0 +1,18 @@
+package collection.treeSet03;
+
+import java.util.TreeSet;
+
+public class TreeSet1 {
+
+	public static void main(String[] args) {
+		TreeSet<Integer> scores = new TreeSet<Integer>();
+		
+		scores.add(89);
+		scores.add(100);
+		scores.add(45);
+		scores.add(91);
+		scores.add(75);
+		
+	}
+
+}
